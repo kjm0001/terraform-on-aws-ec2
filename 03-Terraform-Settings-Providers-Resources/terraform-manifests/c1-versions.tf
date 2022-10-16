@@ -1,7 +1,6 @@
 # Terraform Block
 terraform {
-  #required_version = "~> 0.14" # which means any version equal & above 0.14 like 0.15, 0.16 etc and < 1.xx
-  required_version = "~> 1.0" # which means any version equal & above 0.14 like 0.15, 0.16 etc and < 1.xx
+  required_version = ">= 1.0" # which means any version equal & above 0.14 like 0.15, 0.16 etc and < 1.xx
   required_providers {
     aws = { # local name are module specific and should be unique per module
       # tf configuaration always refer to local nane of provider outside required_provider block
