@@ -13,13 +13,7 @@ variable "instance_type" {
   default     = "t2.micro"
 }
 
-# AWS EC2 Instance Key Pair
-variable "instance_keypair" {
-  description = "AWS EC2 Key Pair that need to be associated with EC2 Instance"
-  type        = string
-  default     = "kmaggard-experity-sandbox.pem"
-}
-
+# showing how to create different var of list and map 
 # AWS EC2 Instance Type - List
 variable "instance_type_list" {
   description = "EC2 Instance Type"
@@ -36,4 +30,11 @@ variable "instance_type_map" {
     "qa"   = "t2.small"
     "prod" = "t2.large"
   }
+}
+
+# AWS EC2 Instance Key Pair
+variable "instance_keypair" {
+  description = "AWS EC2 Key Pair that need to be associated with EC2 Instance"
+  type        = string
+  default     = "kmaggard-experity-sandbox.pem"
 }
