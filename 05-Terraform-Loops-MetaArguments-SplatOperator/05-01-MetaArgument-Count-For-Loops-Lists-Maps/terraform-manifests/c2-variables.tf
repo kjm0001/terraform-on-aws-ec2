@@ -36,5 +36,5 @@ variable "instance_type_map" {
 variable "instance_keypair" {
   description = "AWS EC2 Key Pair that need to be associated with EC2 Instance"
   type        = string
-  default     = "kmaggard-experity-sandbox.pem"
+  default     = "kmaggard-experity-sandbox"
 }
