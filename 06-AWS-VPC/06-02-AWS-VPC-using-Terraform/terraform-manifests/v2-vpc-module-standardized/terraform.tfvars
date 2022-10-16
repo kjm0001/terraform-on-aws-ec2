@@ -1,6 +1,7 @@
 # Generic Variables
-aws_region = "us-east-1"
-environment = "stag"
+# overrides generic variables
+aws_region       = "us-east-1"
+environment      = "stag"
 business_divsion = "HR"
 
 
